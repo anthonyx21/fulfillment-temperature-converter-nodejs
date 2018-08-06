@@ -1,0 +1,37 @@
+{
+  "name": "dialogflowFirebaseFulfillment",
+  "description": "Dialogflow Fulfillment Library Sample for parameters, contexts and rich responses",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Google Inc.",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "bst": "./node_modules/.bin/bst proxy function index.js dialogflowFirebaseFulfillment",
+    "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",
+    "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.12.0",
+    "dialogflow-fulfillment": "^0.6.1",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.2.0",
+    "i18n": "^0.8.3",
+    "i18next": "^17.0.18",
+    "i18next-sync-fs-backend": "^1.1.1"
+  },
+  "devDependencies": {
+    "bespoken-tools": "^2.4.9",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier": "1.18.2"
+  }
+}
